@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+body {
+  background-color: #ec83ad; 
+  color: white; 
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+main{
+  display: block;
+  width: 35%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+  h1 {
+    
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 800;
+    padding-top: 20px;
+  }
+  h1:hover {
+    color: black
+  }
+
+  ol { 
+    color: black;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    font-weight: 800;
+    line-height: 1.7em;
+    font-size: 1em;
+    letter-spacing: -1px;
+  }
+
+.statement {
+  line-height: 1.7em;
+  font-family: Lora;
+  font-weight: 200;
+  font-size: 0.9em;
+}
+p {
+  font-weight: bold;
+}
+
+quote {
+  font-family: Lora;
+  line-height: 1.4em;
+  font-weight: 500;
+  font-size: 1.7em;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.signature {
+  line-height: 1.2em;
+  color: black;
+  font-size: 0.9em;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+main p {
+  font-weight: bold;
+}
+
+img {
+  width: 35%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
