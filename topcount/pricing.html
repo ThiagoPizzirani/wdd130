@@ -9,9 +9,9 @@
 </head>
 <body>
   <div id="content">
+    <div id="logo"><img class="logo" src="images/TopAccount_logo.jpg" alt="TopCount Logo"></div>
     <header>
-        <a href="index.html" id="logo_link"><img class="logo" src="images/TopAccount_logo.jpg" alt="TopCount Logo"></a>
-        <nav>
+         <nav>
             <a href="index.html">Home</a>
             <a href="booking.html">Booking</a>
             <a href="pricing.html">Pricing</a>
@@ -22,51 +22,49 @@
 
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/pricing_hero.jpg" alt="Pricing for Accounting Services">
+                <img id="hero-img" src="images/pricing_hero.jpg" alt="Hero Image Pricing">
             </div>
             <section id="hero-msg">
                 <h1 class="home-title">Affordable Accountant Experts for your Business</h1>
-                <h4>opCount specializes in providing all accounting needs and services for small businesses, including bookkeeping services, accounting and tax services, and CPA services. We offer competitive rates and provide detailed reports that make it easy to understand and manage your finances.</h4>
+                <h4>TopCount specializes in providing all accounting needs and services for small businesses, including bookkeeping services, accounting and tax services, and CPA services. We offer competitive rates and provide detailed reports that make it easy to understand and manage your finances.</h4>
                 <div class="button-box">
                     <a class="book" href="booking.html">BOOK A CALL</a>
                 </div>
             </section>
         </div>
-   
-        <hr>
 
+        <hr class="division">
+   
     <main class="home-grid">
-        <div id="services">
+        <section class="services">
             <h1>Services Pricing</h1>
             <h3>No matter which type of accounting service you need, we have a great option available for your small business. Each package provides a unique set of solutions that are best for you. With the right accounting service, you can ensure that your business’s finances are organized and accurate. Always!</h3>
-        </div>
-        <section class="basic">
-            <img class="icon" src="images/#" alt="basic icon">
+        </section>
+        <section class="affordable">
+            <img class="icon" src="images/icon_pricing_basic.png" alt="Basic Plan icon">
             <h2>Basic Plan</h2>
             <p>$125 / month</p>
             <p>1 call with a specialist and 1 financial service per month</p>
         </section>
-            <section class="advanced">
-                <img class="icon" src="images/#" alt="advanced icon">
+        <section class="support">
+                <img class="icon" src="images/icon_pricing_advanced.png" alt="Advanced Plan icon">
                 <h2>Advanced Plan</h2>
                 <p>$300 / month</p>
                 <p>2 calls with a specialist and 3 financial services per month</p>
-            </section>
-            <section class="premium">
+         </section>
+         <section class="easy">
+                <img class="icon" src="images/icon_pricing_premium.png" alt="Premium Plan icon">
                 <h2>Premium Plan</h2>
                 <p>$650 / month</p>
                 <p>4 calls with a specialist and 4 financial services per month</p>
-            </section>
-
-            <hr>
+        </section>
 
             <div id="background"></div>
-                <img class="quote" src="images/pricing_side.jpg" alt="Accounting Experts">
+                <img class="quote" src="images/pricing_side.jpg" alt="Pricing Service">
                 <section class="msg">
                     <h2>Recognized by the industry</h2>
                     <p>"Investopedia recommends TopCount as the best accounting firm for small businesses. Their basic package is a flat fee of $125 a month, making it a cost-effective option for your business. Plus, their team of experts ensures that all financial documents are accurate and up-to-date."</p>
                 </section>
-
     </main>
 
     <footer>
@@ -97,6 +95,32 @@
                 </a>
             </div>
     </footer>
+
+
+    <button class="open-button" onclick="openForm()">Chat with our Experts</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>TopCount Chat Service</h1>
+
+    <label for="msg"><b>Send us your question</b></label>
+    <textarea placeholder="Type your message here.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send your message</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close this chat</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
 
   </div>
 </body>
