@@ -9,9 +9,9 @@
 </head>
 <body>
   <div id="content">
+    <div id="logo"><img class="logo" src="images/TopAccount_logo.jpg" alt="TopCount Logo"></div>
     <header>
-        <a href="index.html" id="logo_link"><img class="logo" src="images/TopAccount_logo.jpg" alt="TopCount Logo"></a>
-        <nav>
+         <nav>
             <a href="index.html">Home</a>
             <a href="booking.html">Booking</a>
             <a href="pricing.html">Pricing</a>
@@ -22,10 +22,10 @@
 
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/bookacall_content.jpg" alt="Book a call for Accounting Services">
+                <img id="hero-img" src="images/bookacall_content.jpg" alt="Hero Image Book a Call">
             </div>
             <section id="hero-msg">
-                <h1 class="home-title">Book a Call with an Accoutnant Specialist</h1>
+                <h1 class="home-title">Book a Call with an Accountant Expert</h1>
                 <h4>With so many options available, it can be difficult to determine which one is best for your business. At TopCount, we provide you with the right information and professional accountants to help you make the best decision for your business.</h4>
                 <div class="button-box">
                     <a class="book" href="booking.html">BOOK A CALL</a>
@@ -33,43 +33,39 @@
             </section>
         </div>
 
-        <hr>
+        <hr class="division">
    
     <main class="home-grid">
-        <div id="services">
+        <section class="services">
             <h1>Services to Discuss in our Call</h1>
             <h3>When it comes to accounting services, there are a variety of options available to small businesses. Our Professional accountants are trained in a wide range of services, including data entry, invoicing, bill payments, and collection calls</h3>
-        </div>
-        <section class="tax">
-            <img class="icon" src="images/#" alt="tax icon">
-            <h2>Tax Filling</h2>
-            <p>TopCount offers affordable Tax filling services</p>
         </section>
-            <section class="financial">
-                <img class="icon" src="images/#" alt="financial icon">
+        <section class="affordable">
+            <img class="icon" src="images/icon_booking_tax.png" alt="Tax icon">
+            <h2>Tax Filling</h2>
+            <p>TopCount offers affordable Tax filling services.</p>
+        </section>
+        <section class="support">
+                <img class="icon" src="images/icon_booking_financial.png" alt="Financial icon">
                 <h2>Financial Services</h2>
-                <p>We also provide excellent Financial Services and advice</p>
-            </section>
-            <section class="expertise">
-                <img class="icon" src="images/#" alt="expertise icon">
+                <p>We also provide excellent Financial Services and advice.</p>
+         </section>
+         <section class="easy">
+                <img class="icon" src="images/icon_booking_expertise.png" alt="Expertise icon">
                 <h2>Expertise</h2>
-                <p>Our Accountants are certified and ready to support you</p>
-            </section>
-
-            <hr>
+                <p>Our Accountants are certified and ready to support you.</p>
+        </section>
 
             <div id="background"></div>
-                <img class="quote" src="images/bookacall_side.jpg" alt="Accounting Experts">
+                <img class="quote" src="images/bookacall_side.jpg" alt="Book a Call with Accounting Experts">
                 <section class="msg">
                     <h2>Recognized by the industry</h2>
-                    <p>"In addition to ther services, it's important to look for an accountant with the qualifications and certifications - all TopCount experts are QuickBook certified. be sure to check certifications when considering services so they can handle your accounting needs" - QuickBooks Partner Director</p>
+                    <p>"In addition to their services, it's important to look for an accountant with the qualifications and certifications - all TopCount experts are QuickBook certified. Be sure to check certifications when considering services so they can handle your accounting needs" - QuickBooks Partner Director</p>
                 </section>
-
-            <hr>
 
             <div id="partner">
                 <h1>Why Booking a Call with us?</h1>
-                <h2>Hiring an accountant can be a great asset for small businesses. An accountant can provide a wealth of knowledge and expertise to ensure that your finances are organized and accurate. Plus, they can provide invaluable advice to help your business grow and succeed.</h2>
+                <h3>Hiring an accountant can be a great asset for small businesses. An accountant can provide a wealth of knowledge and expertise to ensure that your finances are organized and accurate. Plus, they can provide invaluable advice to help your business grow and succeed.</h3>
             </div>
     </main>
 
@@ -101,6 +97,32 @@
                 </a>
             </div>
     </footer>
+
+
+    <button class="open-button" onclick="openForm()">Chat with our Experts</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>TopCount Chat Service</h1>
+
+    <label for="msg"><b>Send us your question</b></label>
+    <textarea placeholder="Type your message here.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send your message</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close this chat</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
 
   </div>
 </body>
